@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="radio.css">
+</head>
+<body>
+    <div class="container-section">
+        <h1>Etch-A-Sketch</h1>
+        <div class="toggle-radio" data-color='blue' data-style="square">
+            <input type="radio" name="mode" id="mode1" value="black">
+            <label for="mode1">Black</label>
+            <input type="radio" name="mode" id="mode2" value="rainbow">
+            <label for="mode2">Rainbow</label>
+        </div>
+        <form id="form">
+            <label for="rows"></label>
+            <input type="number" id="rowno" name="rows" placeholder="Enter rows">
+            <label for="columns"></label>
+            <input type="number" id="colno" name="columns" placeholder="Enter columns">
+            <button id="btn" type="button">Create Grid</button>
+          </form>
+        <div id="grid"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
